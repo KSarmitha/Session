@@ -1,0 +1,19 @@
+$base-font-size: 16px;
+
+@function px-to-rem($px-value) {
+  @return $px-value / $base-font-size * 1rem;
+}
+
+@function get-spacing($size) {
+    @if $size == small {
+      @return 8px;
+    } @else if $size == medium {
+      @return 16px;
+    } @else if $size == large {
+      @return 32px;
+    } @else {
+      @return 0;
+    }
+}
+
+  

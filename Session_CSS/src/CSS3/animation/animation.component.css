@@ -1,0 +1,64 @@
+.animation-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+ /* Bouncing Ball  */
+.bouncing-ball {
+    width: 50px;
+    height: 50px;
+    background-color: #ff5733;
+    border-radius: 50%;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+  /* Keyframes for Bouncing Ball */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+}
+
+  /* Rotating Square  */
+.rotating-square {
+    width: 70px;
+    height: 70px;
+    background-color: #007bff;
+    animation: rotate 3s infinite linear;
+}
+
+/* Keyframes for Rotating Square */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+ /* Fading Text */
+.fading-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: rebeccapurple;
+    animation: fade 4s infinite;
+}
+
+ /* Keyframes for Fading Text */
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}

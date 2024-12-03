@@ -1,0 +1,73 @@
+@import "variables";
+@import "mixins";
+@import "functions";
+
+// Universal Selector
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// CSS type selector
+body {
+  font-family: $font-family;
+  line-height: 1.6;
+  background-color: $soft-white;
+  color: $text-dark;
+  margin: 0;
+  padding: 0;
+  font-size: $base-font * 2;
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // min-height: 100vh;
+  // background: #607d8b;
+}
+
+
+main {
+  padding: 2rem;
+
+  @include respond-to(small) {
+    display: none;
+  }
+}
+
+h2 {
+  font-size: px-to-rem(50px);
+}
+
+// CSS Class Selector
+.text-center {
+  text-align: center;
+}
+
+.p-2 {
+  padding: get-spacing(small); // Outputs 8px;
+}
+
+.mt-2 {
+  margin-top: get-spacing(small); // Outputs 8px
+}
+
+.m-4 {
+  padding: get-spacing(medium); // Outputs 16px
+}
+
+.primary-btn {
+  @include button-style(#3498db, #fff);
+}
+
+.secondary-btn {
+  @include button-style(#2ecc71, #fff);
+}
+
+.label1 {
+  @include box-shadow;
+}
+
+.label2 {
+  @include box-shadow(3);
+}

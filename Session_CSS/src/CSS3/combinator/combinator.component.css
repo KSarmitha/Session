@@ -1,0 +1,29 @@
+/* Descendant combinator */
+ .descendant div p{
+    color: red;
+ }
+
+
+ /* Child Combinator  */
+.child > p {
+    color: blue;
+}
+
+ /* Next Sibling Combinator   */
+.adjacent + p {
+    color: green;
+}
+
+ /* General Sibling Combinator */
+.general ~ p {
+    color: purple;
+}
+
+/* Example */
+.items > li {
+    list-style: none;
+}
+
+.items ul li {
+    list-style: none;
+}

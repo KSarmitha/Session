@@ -1,0 +1,13 @@
+/* Navigation Bar */
+#heading {
+    color: #0056b3;
+    text-align: center;
+  }
+  
+  
+/* Grouping Selectors */
+   span, h1 {
+    cursor: pointer;
+    font-weight: bold;
+    color: rebeccapurple;
+  }

@@ -1,0 +1,52 @@
+button, input, li {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+  /* Pseudo-Selector :hover  */
+.hover-example {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hover-example:hover {
+    background-color: #0056b3;
+}
+
+ /* Pseudo-Selector :focus */
+.focus-example {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.focus-example:focus {
+    border-color: #007BFF;
+}
+
+ /* Pseudo-Selector :nth-child */
+.list-example li {
+    padding: 5px 10px;
+    list-style-type: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.list-example li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.list-example li:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+.list-example li:nth-child(3) {
+    font-weight: bold;
+    color: #007BFF;
+}

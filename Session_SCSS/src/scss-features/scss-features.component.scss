@@ -1,0 +1,47 @@
+/* Navigation Bar */
+@import "../SCSS/variables";
+@import "../SCSS/card";
+@import "../SCSS/mixins.scss";
+
+#heading {
+  color: $deep-blue;
+  text-align: center;
+}
+
+// Grouping Selectors
+ span, h1 {
+  cursor: pointer;
+  font-weight: bold;
+  color: $rich-purple;
+}
+
+.built-in {
+  color: lighten($deep-blue, 10%);
+
+  &:hover {
+    color: darken($deep-blue, 10%);
+  }
+}
+
+.card {
+  @extend %card-style;
+}
+
+.alert-card {
+  @extend %card-style;
+  background-color: $primary-orange;
+  @include box-shadow(2);
+}
+
+//Extensions
+// .card {
+//   padding: 20px;
+//   border: 1px solid #ddd;
+//   border-radius: 5px;
+// }
+
+// .alert-card {
+//   @extend .card;
+//   background-color: $primary-orange;
+//   // @include box-shadow(2);
+// }

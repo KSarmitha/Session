@@ -1,0 +1,40 @@
+.transform-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #007BFF; /* Blue */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Smooth transform effect */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Rotate Example */
+.box.rotate:hover {
+    transform: rotate(45deg); /* Rotates by 45 degrees */
+}
+
+/* Scale Example */
+.box.scale:hover {
+    transform: scale(1.5); /* Enlarges by 1.5 times */
+}
+
+/* Skew Example */
+.box.skew:hover {
+    transform: skew(20deg, 10deg); /* Skews by 20 degrees along X and 10 along Y */
+}
+
+/* Translate Example */
+.box.translate:hover {
+    transform: translate(50px, 50px); /* Moves diagonally by 50px */
+}

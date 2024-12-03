@@ -1,0 +1,14 @@
+article {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  [data-attribute="featured"] {
+    background: hsl(35 100% 90%);
+    border-color: hsl(35 100% 50%);
+  }
+
+  [test="auto"]{
+    border-radius: 8px;
+  }

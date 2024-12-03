@@ -1,0 +1,39 @@
+  /* Pseudo-Element ::before  */
+.before-element::before {
+    content: "👉 ";
+    color: green;
+    font-weight: bold;
+}
+
+  /* Pseudo-Element ::after */
+.after-element::after {
+    content: " ✔";
+    color: red;
+    font-weight: bold;
+}
+
+ /* Combining ::before and ::after  */
+.before-after-element::before {
+    content: "[START]";
+    color: blue;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.before-after-element::after {
+    content: "[END]";
+    color: orange;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Combining ::first-letter and ::first-line */
+.first-letter-element::first-letter {
+    font-weight: bold;
+    color: red;
+    font-size: 150%;
+}
+
+.first-letter-element::first-line {
+    font-style: italic;
+}

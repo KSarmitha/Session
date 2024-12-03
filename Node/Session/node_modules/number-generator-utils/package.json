@@ -1,0 +1,22 @@
+{
+  "name": "number-generator-utils",
+  "version": "1.0.0",
+  "description": "About to generate random numbers within a range",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KSarmitha/number-generator.git"
+  },
+  "keywords": [
+    "randomNum", "randomDouble"
+  ],
+  "author": "KSarmitha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KSarmitha/number-generator/issues"
+  },
+  "homepage": "https://github.com/KSarmitha/number-generator#readme"
+}
